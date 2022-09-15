@@ -4,8 +4,8 @@
 
 Console.WriteLine("Введите число, ");
 int number = Convert.ToInt32(Console.ReadLine());
-int chet = number % 2;
-if (chet == 0) 
+int even = number % 2;
+if (even == 0) 
 {
     Console.WriteLine($"Число {number} чётное");
 }
