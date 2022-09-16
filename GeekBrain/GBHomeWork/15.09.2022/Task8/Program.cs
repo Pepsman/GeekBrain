@@ -7,7 +7,7 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 int firsteven = 2;
 
-while (firsteven < number)
+while (firsteven <= number)
 {
    Console.Write($"{firsteven} ");
    firsteven = firsteven + 2;

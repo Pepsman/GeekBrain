@@ -10,11 +10,9 @@ Console.WriteLine("Введите второе число, ");
 int number2 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите третье число, ");
 int number3 = Convert.ToInt32(Console.ReadLine());
-int max = 0;
-if (max < number1 )
-{
- max = number1 ;
-}
+
+int max = number1;
+
 if (max < number2)
 {
  max = number2;
