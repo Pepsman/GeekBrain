@@ -7,7 +7,7 @@
 
 bool Multiplicity (int num)
 {
-  {
+{
     return num % 7 == 0 && num % 23 == 0;
 }
 
