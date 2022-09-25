@@ -15,5 +15,5 @@ if (number <1  || number > 7) Console.WriteLine("Нет такого дня не
 else 
 {
  if  (WeekEnd(number))Console.Write("Да"); 
- else Console.Write("Нет");
+ else Console.Write($"{number} -> Нет");
 }
