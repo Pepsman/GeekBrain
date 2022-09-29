@@ -9,12 +9,17 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 void CubeTable(int num)
 {
-    int counter = 1;
-    while (counter <= num)
+    // int counter = 1;
+    // while (counter <= num)
+    // {
+    //    Console.WriteLine($"|{counter, 4} | {counter * counter * counter, 5}|"); 
+    //    counter++;
+    // }
+    for (int i = 1; i <= num; i++)
     {
-       Console.WriteLine($"|{counter, 4} | {counter * counter * counter, 5}|"); 
-       counter++;
+      Console.WriteLine($"|{i, 4} | {i * i * i, 5}|");   
     }
+    
 }
 
 if (number > 0) CubeTable(number);
