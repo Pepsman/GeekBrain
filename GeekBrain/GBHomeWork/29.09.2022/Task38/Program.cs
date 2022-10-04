@@ -29,8 +29,8 @@ void PrintArray(double[] array)
 
 double MaxDeduMin(double[] array)
 {
-    double max = array[1];
-    double min = array[1];
+    double max = array[0];
+    double min = array[0];
     double res = default;
     
 
@@ -47,7 +47,7 @@ double MaxDeduMin(double[] array)
     return res;
 }
 
-double[] arr = CreateArrayRndInt (5, -100 , 100);
+double[] arr = CreateArrayRndInt (5, 0 , 100);
 PrintArray(arr);
 double maxDeduMins = MaxDeduMin(arr);
 Console.WriteLine($"Разница между максимальным и минимальным элементом массива составляет: {Math.Round(maxDeduMins, 1, MidpointRounding.ToEven)}");
