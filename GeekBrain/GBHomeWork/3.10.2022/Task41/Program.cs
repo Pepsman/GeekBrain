@@ -31,7 +31,7 @@ int[] dig = Console.ReadLine().Split(' ').Select(e => Convert.ToInt32(e)).ToArra
 
 int digitalsMoreZero = DigitalsMoreZero(dig);
 PrintArray(dig);
-Console.Write($"Вы ввели {digitalsMoreZero} чисел больше нуля");
+Console.Write($" Вы ввели {digitalsMoreZero} чисел больше нуля");
 
 
 
