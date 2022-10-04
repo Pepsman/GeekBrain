@@ -3,17 +3,17 @@
 // 0, 7, 8, -2, -2 -> 2
 // -1, -7, 567, 89, 223-> 3
 
-void PrintArray(int[] array)
+void PrintArray(double[] array)
 {
-   for (int i = 0; i < array.Length; i++)
+    for (int i = 0; i < array.Length; i++)
     {
         if (i < array.Length - 1) Console.Write($"{array[i]}, ");
         else Console.Write($"{array[i]}");
-    } 
+    }
 }
 
 
-int DigitalsMoreZero(int[] array)
+double DigitalsMoreZero(double[] array)
 {
     int sum = 0;
 
@@ -27,9 +27,9 @@ int DigitalsMoreZero(int[] array)
 
 
 Console.WriteLine("Введите числа через пробел: ");
-int[] dig = Console.ReadLine().Split(' ').Select(e => Convert.ToInt32(e)).ToArray();
+double[] dig = Console.ReadLine().Split(' ').Select(e => Convert.ToDouble(e)).ToArray();
 
-int digitalsMoreZero = DigitalsMoreZero(dig);
+double digitalsMoreZero = DigitalsMoreZero(dig);
 PrintArray(dig);
 Console.Write($" Вы ввели {digitalsMoreZero} чисел больше нуля");
 
