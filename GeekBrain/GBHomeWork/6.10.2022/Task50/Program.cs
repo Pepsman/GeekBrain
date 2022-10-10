@@ -28,15 +28,15 @@ double[,] CreateMatrixRndDbl(int rows, int colums, int min, int max)
 //печать матрицы с отступами и |
 void PrintMatrix(double[,] matr)
 {
-    
+
     for (int i = 0; i < matr.GetLength(0); i++)
-  
+
     {
         Console.Write("|");
         for (int j = 0; j < matr.GetLength(1); j++)
         {
-            if (j < matr.GetLength(1) - 1) Console.Write($"{matr[i, j], 4}, ");
-            else Console.Write($"{matr[i, j], 4} ");
+            if (j < matr.GetLength(1) - 1) Console.Write($"{matr[i, j],4}, ");
+            else Console.Write($"{matr[i, j],4} ");
         }
         Console.WriteLine(" |");
     }
@@ -47,10 +47,13 @@ int xRow = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Ведите позицию столбца элемента");
 int yColum = Convert.ToInt32(Console.ReadLine());
 
-int row = xRow -1;
-int colum =yColum - 1;
+int row = xRow - 1;
+int colum = yColum - 1;
 
-double [,] myMatrix = CreateMatrixRndDbl(10,10, -9, 9);
+double[,] myMatrix = CreateMatrixRndDbl(10, 10, -9, 9);
 PrintMatrix(myMatrix);
-if (row > myMatrix.GetLength(0)|| colum> myMatrix.GetLength(1)) Console.WriteLine("такого элемента в массиве нет");
-else Console.WriteLine($"На строке {xRow} столбец {yColum} находится элемент {myMatrix[row,colum]}");
+if (row > myMatrix.GetLength(0) || colum > myMatrix.GetLength(1))
+    Console.WriteLine("такого элемента в массиве нет");
+else if(row < 0 || colum < 0)
+    Console.WriteLine("не верно задана позиция элемента");
+else Console.WriteLine($"На строке {xRow} столбец {yColum} находится элемент {myMatrix[row, colum]}");
