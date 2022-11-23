@@ -4,7 +4,6 @@ a = int(input("Введите первое число: "))
 b = int(input("Введите второе число: "))
 
 if (b == a**2) or (a == b**2):
-    print ("YES")
+    print("YES")
 else:
-    print ("NO") 
-
+    print("NO")
