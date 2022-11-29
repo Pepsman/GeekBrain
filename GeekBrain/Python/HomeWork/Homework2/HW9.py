@@ -13,10 +13,10 @@ for i in range(-n, n+1):
     spisok.append((i))        
 print(spisok)                  
 
-x = (input('Введите индексы элементов произведение которых необходимо найти: '))
+x =(input('Введите индексы элементов произведение которых необходимо найти: '))
 a = []
 for i in x.split(" "):
-    a.append(int(i))
+     a.append(int(i))
 #print(a)
 #print(type(a[0]))                       
 
